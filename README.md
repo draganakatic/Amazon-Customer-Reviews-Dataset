@@ -39,7 +39,6 @@ Projekat analizira ~568 000 Amazon recenzija prehrambenih proizvoda sa ciljem pr
 ```
 amazon-reviews-mining/
 │
-├── classification.ipynb              # Klasifikacija – Score i Sentiment (osnovni notebook)
 ├── classification_all_.ipynb         # Klasifikacija – ALL atributi (tekst + numerički)
 ├── classification__text.ipynb        # Klasifikacija – Text-only atributi
 ├── classification_Sentiment.ipynb    # Klasifikacija – binarni cilj Sentiment
