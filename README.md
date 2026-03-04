@@ -87,7 +87,6 @@ Reviews.csv                     ← Reviews.csv ide OVDE
         ├── classification_all_.ipynb
         ├── classification__text.ipynb
         ├── classification_Sentiment.ipynb
-        ├── classification.ipynb
         └── apriori.ipynb
 ```
 
@@ -115,7 +114,6 @@ Reviews.csv                     ← Reviews.csv ide OVDE
 
 ### Preprocesiranje
 
-- Spajanje `Summary` i `Text` u jednu kolonu `TextFull`
 - Čišćenje teksta: lowercase, uklanjanje URL-ova i specijalnih karaktera
 - Tokenizacija, uklanjanje stop-reči (NLTK), lematizacija
 - TF-IDF vektorizacija sa bigramima (`ngram_range=(1,2)`), dve konfiguracije: **10k** i **20k** osobina
@@ -132,7 +130,7 @@ Primarna metrika evaluacije: **F1-macro** (zbog nebalansiranosti).
 ### Klasifikacija
 
 - Stratifikovana podela 80/20 (train/test)
-- 5-fold cross-validation na trening skupu
+- 5-fold cross-validation na trening skupu za najbolji model
 - GridSearchCV za hiperparametre najboljeg modela
 
 ### Klasterovanje
@@ -157,7 +155,6 @@ Primarna metrika evaluacije: **F1-macro** (zbog nebalansiranosti).
 | Score (1–5) | LinearSVC, ALL, TF-IDF 20k, RAW | 0.736 | 0.521 |
 | Sentiment (0/1) | LinearSVC, ALL, TF-IDF 20k, RAW | 0.940 | 0.879 |
 
-AUC (Sentiment, LinearSVC): **0.9669** (ALL) / **0.9656** (Text-only)
 
 ### Klasterovanje — ključni nalazi
 
