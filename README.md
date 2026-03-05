@@ -11,7 +11,6 @@ klasifikacija, klasterovanje i pravila pridruživanja.
 ## Sadržaj
 
 - [Pregled projekta](#pregled-projekta)
-- [Struktura repozitorijuma](#struktura-repozitorijuma)
 - [Skup podataka](#skup-podataka)
 - [Metodologija](#metodologija)
 - [Rezultati](#rezultati)
@@ -34,33 +33,7 @@ Projekat analizira ~568 000 Amazon recenzija prehrambenih proizvoda sa ciljem pr
 
 ---
 
-## Struktura repozitorijuma
 
-```
-amazon-reviews-mining/
-│
-├── classification_all_.ipynb         # Klasifikacija – ALL atributi (tekst + numerički)
-├── classification__text.ipynb        # Klasifikacija – Text-only atributi
-├── classification_Sentiment.ipynb    # Klasifikacija – binarni cilj Sentiment
-│
-├── clustering/                       # Klasterovanje (po skupovima atributa)
-│   ├── clustering_all.ipynb
-│   ├── clustering_text.ipynb
-│   └── clustering_svd.ipynb
-│
-├── apriori.ipynb                     # Pravila pridruživanja (Apriori)
-│
-├── grafici_all/                      # Vizualizacije – svi atributi
-├── grafici_final/                    # Vizualizacije – finalne slike za izveštaj
-│
-├── best_model.joblib                 # Sačuvani best model (Score – LinearSVC)
-├── best_sentiment_model.joblib       # Sačuvani best model (Sentiment – LinearSVC)
-│
-├── seminarski_v2.tex                 # LaTeX izveštaj
-└── README.md
-```
-
----
 
 ## Skup podataka
 
